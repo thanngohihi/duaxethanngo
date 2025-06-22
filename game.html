@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test Game Đua Xe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Canvas chơi game -->
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Hiển thị điểm -->
+  <div id="scoreDisplay">
+    Điểm: <span id="currentScore">0</span><br>
+    Kỷ lục: <span id="highScore">0</span>
+  </div>
+
+  <!-- Nút điều khiển di chuyển (mobile) -->
+  <div class="controls">
+    <button id="left">←</button>
+    <button id="right">→</button>
+  </div>
+
+  <!-- Nút chơi lại -->
+  <button id="retryBtn" style="display: none;">Chơi lại</button>
+
+  <!-- Script cuối cùng -->
+  <script src="/js/game.js"></script>
+</body>
+</html>

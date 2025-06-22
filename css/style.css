@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #333);
+  color: white;
+  text-align: center;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.menu button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #00ffff;
+  border: none;
+  color: #111;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.menu button:hover {
+  transform: scale(1.05);
+}
+
+canvas {
+  display: block;
+  background: #222;
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.controls button {
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #00ffff;
+  color: #111;
+}
+canvas {
+  background: #222;
+  display: block;
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.controls button {
+  font-size: 24px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: #00ffff;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+#scoreDisplay {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 22px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#leaderboard {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#leaderboard h2 {
+  margin-top: 0;
+}
+
+#leaderboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#leaderboard li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+#retryBtn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00ffff;
+  color: #111;
+  font-size: 24px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 20;
+  display: none;
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+  transition: transform 0.2s ease;
+}
+
+#retryBtn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
